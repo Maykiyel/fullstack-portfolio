@@ -127,7 +127,7 @@ The HTTP/API boundary is the primary automated testing seam.
 - React
 - TypeScript
 - Vite
-- React Router 7 in Data Mode
+- React Router 8 in Data Mode
 - TanStack Query
 - Axios
 - React Hook Form
