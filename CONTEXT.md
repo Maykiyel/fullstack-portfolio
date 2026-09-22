@@ -17,12 +17,12 @@ The substantive presentation of a Project, explaining the project through five s
 _Avoid_: Project when referring specifically to the explanatory content.
 
 **Technology**
-A technology, tool, or technical capability associated with a Project.
-_Avoid_: Stack, tag, tool when referring to the canonical concept.
+A technology, tool, or technical capability associated with a Project. A Technology classifies a Project; it does not by itself assert that the Portfolio owner offers it as a capability.
+_Avoid_: Stack, tag, tool when referring to the canonical concept. Skill when referring to the owner's advertised capability rather than a Project's classification.
 
 **Category**
-A professional classification describing the kind of work represented by a Project.
-_Avoid_: Tag when the classification has a defined professional meaning.
+A professional classification describing the kind of work represented by a Project. A Category describes work that was done; it is not an offer of work the Portfolio owner is available to take on.
+_Avoid_: Tag when the classification has a defined professional meaning. Service when referring to work the owner offers.
 
 **Media asset**
 A visual or audiovisual asset associated with a Project, such as an image, gallery item, or video. A Media asset has presentation metadata and belongs to a Project.
@@ -37,6 +37,10 @@ _Avoid_: Contact, message, lead when referring to the request as a portfolio dom
 **Client**
 A person or organization that has an established professional relationship with the Portfolio owner. An Inquiry does not by itself make someone a Client, and neither does a client name recorded on a Project, which is display attribution only.
 _Avoid_: Lead when referring to an established relationship.
+
+**Service**
+A kind of work the Portfolio owner offers to take on. A Service is distinct from a Category: a Category classifies work already done, while a Service advertises work available to be commissioned. The two sets overlap, but neither contains the other.
+_Avoid_: Category when referring to an offer rather than a classification of existing work.
 
 **Availability**
 The Portfolio owner's current stated availability for professional work.
