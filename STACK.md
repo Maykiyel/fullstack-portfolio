@@ -5,7 +5,7 @@
 - React
 - TypeScript
 - Vite
-- React Router 7 Data Mode
+- React Router 8 Data Mode
 - TanStack Query
 - Axios
 - React Hook Form
