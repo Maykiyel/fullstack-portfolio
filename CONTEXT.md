@@ -6,10 +6,14 @@ The Portfolio is the owner's public professional presence. It presents the owner
 
 **Project**
 A piece of work presented in the Portfolio. A Project includes its professional context, case-study content, Technologies, Categories, links, publication state, and Media assets.
+
+A Project's links are a link to the live work and a link to its public source repository. Either may be absent.
+
+A Project's professional context is the name of the client the work was done for, the role the Portfolio owner held, and the period the work ran over. Any of these may be absent, and a Project need not have a client at all. The client name a Project records is display attribution; it does not by itself establish a Client.
 _Avoid_: Work, case study, portfolio item when referring to the complete concept.
 
 **Case study**
-The substantive presentation of a Project, explaining the project through structured content such as its overview, problem, process, solution, and results.
+The substantive presentation of a Project, explaining the project through five structured sections: its overview, problem, process, solution, and results. These five are the whole set. Every section is optional, and a Case study presents only the sections that have been written.
 _Avoid_: Project when referring specifically to the explanatory content.
 
 **Technology**
@@ -31,7 +35,7 @@ A request submitted by a visitor who wants to contact the Portfolio owner, usual
 _Avoid_: Contact, message, lead when referring to the request as a portfolio domain concept.
 
 **Client**
-A person or organization that has an established professional relationship with the Portfolio owner. An Inquiry does not by itself make someone a Client.
+A person or organization that has an established professional relationship with the Portfolio owner. An Inquiry does not by itself make someone a Client, and neither does a client name recorded on a Project, which is display attribution only.
 _Avoid_: Lead when referring to an established relationship.
 
 **Availability**
