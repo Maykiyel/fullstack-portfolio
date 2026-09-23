@@ -511,7 +511,7 @@ regenerated. Check this early — it is cheap to check and annoying to discover 
 ### Local development: Vite dev server + Fastify on a separate port
 
 `apps/web` runs on Vite's dev server (default `http://localhost:5173`), `apps/api` on
-`http://localhost:3001` (`apps/api/src/index.ts`). Different ports ⇒ **different
+`http://localhost:3000` (`apps/api/src/index.ts`). Different ports ⇒ **different
 origins** ⇒ cross-origin requests with credentials.
 
 **[VERIFIED] `trustedOrigins`** — Better Auth rejects cross-origin requests by default:
@@ -533,7 +533,7 @@ running in production mode" (`concepts/cookies.mdx` @ `v1.7.5`).
 force-enables it locally.
 
 **[ASSUMPTION — important, and not stated by the docs.]** `SameSite=Lax` is **not sent
-on cross-site XHR/fetch**. `http://localhost:5173` and `http://localhost:3001` are
+on cross-site XHR/fetch**. `http://localhost:5173` and `http://localhost:3000` are
 different *origins* but the same *site* (registrable domain `localhost`), so the browser
 treats them as **same-site** and `Lax` cookies are sent. That is why the two-port local
 setup usually "just works" with `Lax`. The moment production puts web and API on
@@ -558,7 +558,7 @@ from `@fastify/cors@v11.3.0`'s README:
 that sends a header you forgot.
 
 **[ASSUMPTION]** If cookies prove awkward in dev, Vite's `server.proxy` can put the API
-behind the web origin (`/api` → `http://localhost:3001`), making everything same-origin
+behind the web origin (`/api` → `http://localhost:3000`), making everything same-origin
 and removing CORS and `SameSite` from the dev picture entirely. The repo's
 `apps/web/vite.config.ts` currently has **no** proxy configured. This mirrors the
 production shape the spec says is eventually preferred, which is an argument for doing it
@@ -600,7 +600,7 @@ repo's startup config validation per `docs/development.md` §10.
 
 **Summary table**
 
-| | local dev (5173 ↔ 3001) | prod, same-origin `/api` | prod, separate subdomains |
+| | local dev (5173 ↔ 3000) | prod, same-origin `/api` | prod, separate subdomains |
 | --- | --- | --- | --- |
 | `sameSite` | `Lax` (default) | `Lax` (default) | `Lax` works with `crossSubDomainCookies` |
 | `secure` | off (http) | on (prod default) | on |
@@ -923,7 +923,7 @@ Listed plainly rather than glossed:
 4. **React Router 8.** Better Auth 1.7.5 documents React Router **v7** only, in
    framework/SSR mode. No v8 guidance exists. The assumption that the React client is
    router-agnostic is reasonable but **unproven**. (§5)
-5. **`SameSite=Lax` across `localhost:5173` ↔ `localhost:3001`.** The same-site (not
+5. **`SameSite=Lax` across `localhost:5173` ↔ `localhost:3000`.** The same-site (not
    same-origin) reasoning is a cookie-spec inference, **not** a Better Auth doc
    statement. Verify in a real browser. (§4)
 6. **`auth create-admin` against this exact stack** (Drizzle rc.4, Postgres 18,
